@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: calibri;
+        }
+        #box{
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 30px;
+            width: 400px;
+            height: 200px;
+            position: relative;
+            left: 300px;
+            top: 100px;
+        }
+        .sub{
+            height: 40px;
+            width: 100px;
+            border-radius: 12px;
+            background-color: rgb(207, 212, 212);
+        }
+        input{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function fun(){
+            alert('submitted');
+        }
+    </script>
+    <div id="box">
+        <h3>Name: <input type="text"></h3>
+        <h3>Password: <input type="password"></h3>
+        <input type="submit" class="sub" onclick="fun()">
+    </div>
+</body>
+</html>
